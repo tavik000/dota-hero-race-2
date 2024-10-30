@@ -1,6 +1,6 @@
 {
-    "name": "x_template",
-    "description": "a ts-react template for dota2 modding, together with some helper scripts",
+    "name": "dota_hero_race_2",
+    "description": "hero race 2 using x-template",
     "license": "MIT",
     "repository": "https://github.com/XavierCHN/x-template",
     "scripts": {
