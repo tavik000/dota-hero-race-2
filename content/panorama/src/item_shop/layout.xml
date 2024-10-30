@@ -4,7 +4,6 @@
     </scripts>
     <styles>
         <include src="./styles.less" />
-        <include src="s2c://panorama/styles/dotastyles.vcss_c" />
     </styles>
     <Panel class="root" hittest="false" />
 </root>
