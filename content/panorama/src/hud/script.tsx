@@ -14,3 +14,5 @@ const Test: FC = () => {
 render(<Test />, $.GetContextPanel());
 
 console.log(`Hello, world!`);
+
+$.Msg('11111 Hello world');
