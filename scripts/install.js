@@ -26,6 +26,9 @@ const { getDotaPath } = require('./utils');
         assert(fs.existsSync(targetRoot), `Could not find '${targetRoot}'`);
 
         const targetPath = path.join(dotaPath, directoryName, 'dota_addons', addon_name);
+
+        // console.log('sourcePath:', sourcePath);
+        // console.log('targetPath:', targetPath);
         if (fs.existsSync(targetPath)) {
             const isCorrect = fs.lstatSync(sourcePath).isSymbolicLink() && fs.realpathSync(sourcePath) === targetPath;
             if (isCorrect) {
@@ -43,8 +46,9 @@ const { getDotaPath } = require('./utils');
                 });
             }
         } else {
-            fs.moveSync(sourcePath, targetPath);
-            fs.symlinkSync(targetPath, sourcePath, 'junction');
+            // fs.moveSync(sourcePath, targetPath);
+            // fs.symlinkSync(targetPath, sourcePath, 'junction');
+            fs.symlinkSync(sourcePath, targetPath, 'junction');
             console.log(`Linked ${sourcePath} <==> ${targetPath}`);
         }
     }
