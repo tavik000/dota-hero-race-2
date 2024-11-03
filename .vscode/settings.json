@@ -6,11 +6,11 @@
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[json]": {
         "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
     },
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-    "eslint.run": "onSave",
+    "eslint.run": "onSave"
 }
