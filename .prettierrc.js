@@ -1,4 +1,5 @@
 module.exports = {
+    endOfLine: 'auto',
     arrowParens: 'avoid',
     bracketSpacing: true,
     jsxBracketSameLine: false,
