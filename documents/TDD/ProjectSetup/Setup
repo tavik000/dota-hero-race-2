@@ -4,7 +4,9 @@
 
 ### Compile
 
-`npm dev run` for compile all
+`npm dev run` 
+
+compile all
 
 include:
 1. game logic typescript to lua
@@ -14,8 +16,12 @@ include:
 
 ### Run Hammer & Dota
 
-`npm run launch` for launch hammer and dota
+`npm run launch` 
+
+launch hammer and dota
 
 ### Format all script
 
-`npm run format` for format all custom script with Prettier
+`npm run format` 
+
+format all custom script with Prettier
