@@ -190,20 +190,20 @@ gulp.task('start_file_server', start_file_server);
 
 gulp.task('localization_2_csv', localization_2_csv);
 
-gulp.task(`create_image_precache`, create_image_precache());
-gulp.task('create_image_precache:watch', create_image_precache(true));
+gulp.task(`create_image_precache`, (done) => { create_image_precache()(); done(); });
+gulp.task('create_image_precache:watch', (done) => { create_image_precache(true)(); done(); });
 
-gulp.task('sheet_2_kv', sheet_2_kv());
-gulp.task('sheet_2_kv:watch', sheet_2_kv(true));
+gulp.task('sheet_2_kv', (done) => { sheet_2_kv()(); done(); });
+gulp.task('sheet_2_kv:watch', (done) => { sheet_2_kv(true)(); done(); });
 
-gulp.task('kv_2_js', kv_2_js());
-gulp.task('kv_2_js:watch', kv_2_js(true));
+gulp.task('kv_2_js', (done) => { kv_2_js()(); done(); });
+gulp.task('kv_2_js:watch', (done) => { kv_2_js(true)(); done(); });
 
-gulp.task('csv_to_localization', csv_to_localization());
-gulp.task('csv_to_localization:watch', csv_to_localization(true));
+gulp.task('csv_to_localization', (done) => { csv_to_localization()(); done(); });
+gulp.task('csv_to_localization:watch', (done) => { csv_to_localization(true)(); done(); });
 
-gulp.task('compile_less', compile_less());
-gulp.task('compile_less:watch', compile_less(true));
+gulp.task('compile_less', (done) => { compile_less()(); done(); });
+gulp.task('compile_less:watch', (done) => { compile_less(true)(); done(); });
 
 gulp.task('predev', gulp.series('sheet_2_kv', 'kv_2_js', 'csv_to_localization', 'create_image_precache'));
 gulp.task(
