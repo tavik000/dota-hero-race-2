@@ -1,0 +1,21 @@
+# Setup
+
+## Basic Command
+
+### Compile
+
+`npm dev run` for compile all
+
+include:
+1. game logic typescript to lua
+2. panorama react typescript file
+3. excel to kv (hero, ability, item, etc.)
+4. localization csv to localization text file
+
+### Run Hammer & Dota
+
+`npm run launch` for launch hammer and dota
+
+### Format all script
+
+`npm run format` for format all custom script with Prettier
