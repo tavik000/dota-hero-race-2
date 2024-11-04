@@ -1,3 +1,3 @@
-﻿Tokens,SChinese,English
-ability_test,测试技能,
-ability_test_Description,测试技能的描述,
+﻿Tokens,English,SChinese,TChinese,Japanese,Russian
+ability_test,Ability Test,测试技能,測試技能,テストスキル,Тестовый навык
+ability_test_Description,Ability Desc,测试技能的描述,測試技能的描述,テストスキルの説明,Описание тестового навыка
