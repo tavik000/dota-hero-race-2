@@ -13,5 +13,5 @@
     },
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
     "eslint.run": "onSave",
-    "cSpell.words": ["precache"]
+    "cSpell.words": ["Gameplay", "precache"]
 }
