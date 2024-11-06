@@ -3,7 +3,9 @@ export class GameConfig {
         SendToServerConsole('dota_max_physical_items_purchase_limit 9999'); // 用来解决物品数量限制问题
 
         const GameModeEntity = GameRules.GetGameModeEntity();
-        GameModeEntity.SetFogOfWarDisabled(false); 
+        GameModeEntity.SetFogOfWarDisabled(true); 
+        GameModeEntity.SetUnseenFogOfWarEnabled(false);
+        GameModeEntity.SetCameraZRange(0, 5000);
         GameModeEntity.SetCameraDistanceOverride(2000);
 
 
