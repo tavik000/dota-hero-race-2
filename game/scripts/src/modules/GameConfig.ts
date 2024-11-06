@@ -2,6 +2,11 @@ export class GameConfig {
     constructor() {
         SendToServerConsole('dota_max_physical_items_purchase_limit 9999'); // 用来解决物品数量限制问题
 
+        const GameModeEntity = GameRules.GetGameModeEntity();
+        GameModeEntity.SetFogOfWarDisabled(false); 
+        GameModeEntity.SetCameraDistanceOverride(2000);
+
+
         // GameRules.SetCustomGameSetupAutoLaunchDelay(3); // 游戏设置时间（默认的游戏设置是最开始的队伍分配）
         // GameRules.SetCustomGameSetupRemainingTime(3); // 游戏设置剩余时间
         // GameRules.SetCustomGameSetupTimeout(3); // 游戏设置阶段超时
