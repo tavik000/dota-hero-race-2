@@ -13,5 +13,5 @@
     },
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
     "eslint.run": "onSave",
-    "cSpell.words": ["Gameplay", "precache"]
+    "cSpell.words": ["Dota", "Gameplay", "precache", "respawn"]
 }
